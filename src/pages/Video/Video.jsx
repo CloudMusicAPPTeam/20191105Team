@@ -1,12 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-class Cart extends React.Component {
+class Video extends React.Component {
 	render() {
 		return <div>
-			购物车
+			视频
 		</div>;
 	}
 }
 
-export default Cart;
+export default Video;

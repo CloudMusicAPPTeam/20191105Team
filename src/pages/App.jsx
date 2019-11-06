@@ -1,13 +1,10 @@
 import React from 'react';
 import { HashRouter, Switch, Route, Redirect } from 'react-router-dom';
-
-import Home from './Home/Home';
-import Classify from './Classify/Classify';
-import Taste from './Taste/Taste';
-import Cart from './Cart/Cart';
-import Pay from './Pay/Pay';
-import Detail from './Detail/Detail';
+import Login from './Login/Login';
 import Personal from './Personal/Personal';
+import Find from './Find/Find';
+import Cloud from './Cloud/Cloud';
+import Video from './Video/Video';
 import Search from './Search/Search';
 import Tab from '../components/Tab';
 
@@ -18,20 +15,21 @@ import '../assets/css/common.less';
 export default class App extends React.Component {
 	render() {
 		return <HashRouter>
+			{/* 公共的头部导航 */}
+			<Tab />
+
 			<Switch>
-				<Route path='/' component={Home} exact />
-				<Route path='/classify' component={Classify} />
-				<Route path='/taste' component={Taste} />
-				<Route path='/cart' component={Cart} />
-				<Route path='/pay' component={Pay} />
-				<Route path='/detail/:id' component={Detail} />
-				<Route path='/search' component={Search} />
+				<Route path='/login' component={Login} />
 				<Route path='/personal' component={Personal} />
+				<Route path='/' component={Find} exact />
+				<Route path='/cloud' component={Cloud} />
+				<Route path='/video' component={Video} />
+				<Route path='/search' component={Search} />
 				<Redirect to='/' />
 			</Switch>
 
-			{/* 公共的底部导航 */}
-			<Tab />
+			{/* 公共的头部导航 */}
+
 		</HashRouter>;
 	}
 }

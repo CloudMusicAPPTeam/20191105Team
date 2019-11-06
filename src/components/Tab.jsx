@@ -4,28 +4,32 @@ import './Tab.less';
 
 function Tab(props) {
 	let pathName = props.location.pathname,
-		flag = /(DETAIL|PAY|CART|SEARCH|LOGIN)/i.test(pathName);
+		flag = /(SEARCH|LOGIN)/i.test(pathName);
 	return <>
 		{flag ? null : <div className='tab'>
-			<NavLink className="link" to='/' exact>
+			<NavLink className="link" to='/login'>
 				<i className="icon"></i>
-				<span>首页</span>
-			</NavLink>
-			<NavLink className="link" to='/classify'>
-				<i className="icon"></i>
-				<span>分类</span>
-			</NavLink>
-			<NavLink className="link" to='/taste'>
-				<i className="icon"></i>
-				<span>品味</span>
-			</NavLink>
-			<NavLink className="link" to='/cart'>
-				<i className="icon"></i>
-				<span>购物车</span>
+				<span>设置</span>
 			</NavLink>
 			<NavLink className="link" to='/personal'>
 				<i className="icon"></i>
-				<span>个人</span>
+				<span>我的</span>
+			</NavLink>
+			<NavLink className="link" to='/' exact>
+				<i className="icon"></i>
+				<span>发现</span>
+			</NavLink>
+			<NavLink className="link" to='/cloud'>
+				<i className="icon"></i>
+				<span>云村</span>
+			</NavLink>
+			<NavLink className="link" to='/video'>
+				<i className="icon"></i>
+				<span>视频</span>
+			</NavLink>
+			<NavLink className="link" to='/search'>
+				<i className="icon"></i>
+				<span>搜索</span>
 			</NavLink>
 		</div>}
 	</>;
