@@ -50,10 +50,10 @@ class Banner extends React.Component {
 			pagination: {
 				el: '.swiper-pagination',
 			},
-			autoplay: {
+			/* autoplay: {
 				delay: 1000,
 				disableOnInteraction: false
-			}
+			} */
 		});
 	}
 }

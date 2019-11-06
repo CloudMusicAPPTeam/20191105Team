@@ -1,26 +1,41 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
+import 'antd/dist/antd.css';
 import './Header.less';
+import zhCN from 'antd/es/locale/zh_CN';
+import { ConfigProvider, Input, Button,Checkbox } from 'antd';
 
 function Header(props) {
-	return <div className="main-header">
-		<div className="logo-box">
-			<img src={require('../../assets/images/navi_title_v2.png')} alt="" />
+	return <ConfigProvider locale={zhCN}>
+
+		<div className='loginBox' >
+			<div className="main-header">
+			</div>
+			<div className='login-input'>
+				<Input placeholder="输入账号" />
+				<br />
+				<Input.Password placeholder="输入密码" />
+			</div>
+
+			<Button>登录</Button>
+			<a href='/' className='login-zhuce'>注册</a>
+
+			{/*  */}
+			<div className='login-icon clearfix'>
+				<i className='qq'></i>
+				<i className='weixin'></i>
+				<i className='wangyi'></i>
+				<i className='xinlang'></i>
+			</div>
+			<div className='login-xieyi'>
+			
+			<Checkbox><i>同意</i><span>《用户协议》《隐私协议》《儿童隐私政策》</span></Checkbox>
+			</div>
+			
 		</div>
-		<div className="search-box"
-			onClick={ev => {
-				props.history.push('/search');
-			}}>
-			<img src="https://static.home.mi.com/youpin/static/m/res/images/home_search.png" alt="" />
-			<span>年货嗨抢，最高直降1000</span>
-		</div>
-		<div className="msg-box"
-			style={{
-				visibility: 'hidden'
-			}}>
-			<div className="msg"></div>
-		</div>
-	</div>;
+	</ConfigProvider>
+
+	
 }
 export default withRouter(Header);
