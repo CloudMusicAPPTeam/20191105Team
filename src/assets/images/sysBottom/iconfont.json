@@ -1,0 +1,30 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7889426",
+      "name": "夜间",
+      "font_class": "yejian",
+      "unicode": "e896",
+      "unicode_decimal": 59542
+    },
+    {
+      "icon_id": "8488781",
+      "name": "退出",
+      "font_class": "tuichu",
+      "unicode": "e515",
+      "unicode_decimal": 58645
+    },
+    {
+      "icon_id": "11076289",
+      "name": "设置",
+      "font_class": "shezhi",
+      "unicode": "e6b9",
+      "unicode_decimal": 59065
+    }
+  ]
+}

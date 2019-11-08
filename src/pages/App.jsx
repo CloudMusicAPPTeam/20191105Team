@@ -7,6 +7,7 @@ import Cloud from './Cloud/Cloud';
 import Video from './Video/Video';
 import Search from './Search/Search';
 import Tab from '../components/Tab';
+/* import System from '../components/system'; */
 
 /* 导入公共的样式 */
 import '../assets/css/reset.min.css';
@@ -19,7 +20,7 @@ export default class App extends React.Component {
 			<Tab />
 
 			<Switch>
-				<Route path='/login' component={Login} />
+				<Route path='/login' component={Login} />}
 				<Route path='/personal' component={Personal} />
 				<Route path='/' component={Find} exact />
 				<Route path='/cloud' component={Cloud} />

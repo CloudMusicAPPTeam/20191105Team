@@ -1,0 +1,37 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "730799",
+      "name": "用户",
+      "font_class": "icon-user",
+      "unicode": "e677",
+      "unicode_decimal": 58999
+    },
+    {
+      "icon_id": "1031662",
+      "name": "听歌识曲",
+      "font_class": "tinggeshiqu",
+      "unicode": "e64f",
+      "unicode_decimal": 58959
+    },
+    {
+      "icon_id": "1229816",
+      "name": "信息",
+      "font_class": "xinxi",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "1979374",
+      "name": "个性",
+      "font_class": "gexing",
+      "unicode": "ea56",
+      "unicode_decimal": 59990
+    }
+  ]
+}
