@@ -1,0 +1,16 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7184563",
+      "name": "sou-suo",
+      "font_class": "search",
+      "unicode": "e504",
+      "unicode_decimal": 58628
+    }
+  ]
+}

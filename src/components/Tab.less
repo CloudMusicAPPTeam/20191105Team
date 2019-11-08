@@ -14,21 +14,15 @@
 	justify-content: space-around;
 
 	.link {
-		.icon {
-			display: flex;
-			flex-direction: row;
-			width: .24rem;
-			height: .24rem;
-			background: url("../assets/images/img.png") no-repeat;
-			background-size: .24rem;
-		}
-
+		font-size: .3rem;
+		line-height: .51rem;
+		text-align: center;
 		span {
 			font-size: 14px;
 			color: rgb(127, 127, 127);
 
 			&:hover {
-				color: rgb(132, 95, 63);
+				color: #d43c33;
 			}
 		}
 	}
@@ -89,12 +83,19 @@
 		.icon {
 			background-position: 0 89%;
 			margin-left: 2px;
+			
 		}
-
+		
 		&.active {
 			.icon {
 				background-position: 0 99.5%;
 			}
 		}
+	}
+	.sousuo{
+		color: #000;
+	}
+	.iconfont{
+		font-size: .2rem;
 	}
 }
