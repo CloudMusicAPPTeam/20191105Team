@@ -1,6 +1,8 @@
 import React from 'react';
+import { Switch, Route, Redirect, Link, NavLink } from 'react-router-dom';
 import './Personal.less';
 import MainPlateBanner from '../../components/mainPlateBanner';
+import PersonalList from './personalTwo/personalList';
 import '../../assets/iconfont/iconfont.css';
 
 class Personal extends React.Component {
@@ -13,37 +15,37 @@ class Personal extends React.Component {
 			<div className='banner'>
 				<div className='bannerLi'>
 					<i className='iconfont icon-yinyue'></i>
-					<span className='outsideSpan'>
+					<Link to='' className='outsideSpan' href=''>
 						本地音乐<span className=' insideSpan'>(300)</span>
-					</span>
+					</Link>
 				</div>
 				<div className='bannerLi'>
 					<i className='iconfont icon-zuijinbofang'></i>
-					<span className='outsideSpan'>
+					<Link className='outsideSpan'>
 						最近播放
 						<span className=' insideSpan'>(60)</span>
-					</span>
+					</Link>
 				</div>
 				<div className='bannerLi'>
 					<i className='iconfont icon-xiazaimoban'></i>
-					<span className='outsideSpan'>
+					<Link className='outsideSpan'>
 						下载管理
 						<span className=' insideSpan'>(0)</span>
-					</span>
+					</Link>
 				</div>
 				<div className='bannerLi'>
 					<i className='iconfont icon-diantai'></i>
-					<span className='outsideSpan'>
+					<Link className='outsideSpan'>
 						我的电台
 						<span className=' insideSpan'>(0)</span>
-					</span>
+					</Link>
 				</div>
 				<div className='bannerLi'>
 					<i className='iconfont icon-wodeshoucang'></i>
-					<span className='outsideSpan5'>
+					<Link className='outsideSpan5'>
 						我的收藏
 						<span className=' insideSpan'>(专辑/歌手/视频/Mlog)</span>
-					</span>
+					</Link>
 				</div>
 			</div>
 			<div className='songSheet'>
@@ -83,6 +85,11 @@ class Personal extends React.Component {
 
 				</div>
 			</div>
+			<Switch>
+				<Route path='/personal/list' component={PersonalList} />
+				<Route path='/personal/list' exact component={PersonalList} />
+				<Route path='/personal/list/:customId' component={PersonalList} />
+			</Switch>
 		</>;
 	}
 }

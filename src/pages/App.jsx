@@ -29,7 +29,6 @@ export default class App extends React.Component {
 				<Redirect to='/' />
 			</Switch>
 
-			{/* 公共的头部导航 */}
 
 		</HashRouter>;
 	}

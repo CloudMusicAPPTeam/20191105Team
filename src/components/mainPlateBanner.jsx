@@ -17,62 +17,90 @@ class MainPlateBanner extends React.Component {
             <div className="swiper-container">
                 <div className="swiper-wrapper">
                     {/* h:78px w:60px*/}
-                    <div className="swiper-slide">
-                        <img src={require('../assets/images/mainplate/slide1.png')} alt="" />
-                        <span>最嗨电音</span>
-                    </div>
-                    <div className="swiper-slide">
-                        <img src={require('../assets/images/mainplate/slide1.png')} alt="" />
-                        <span>私人FM</span>
-                    </div>
-                    <div className="swiper-slide">
-                        <img src={require('../assets/images/mainplate/slide1.png')} alt="" />
-                        <span>ACG专区</span>
-                    </div>
-                    <div className="swiper-slide">
-                        <img src={require('../assets/images/mainplate/slide1.png')} alt="" />
-                        <span>Sati空间</span>
-                    </div>
-                    <div className="swiper-slide">
-                        <img src={require('../assets/images/mainplate/slide1.png')} alt="" />
-                        <span>私藏推荐</span>
-                    </div>
-                    <div className="swiper-slide">
-                        <img src={require('../assets/images/mainplate/slide1.png')} alt="" />
-                        <span>因乐交友</span>
-                    </div>
-                    <div className="swiper-slide">
-                        <img src={require('../assets/images/mainplate/slide1.png')} alt="" />
-                        <span>亲子频道</span>
-                    </div>
-                    <div className="swiper-slide">
-                        <img src={require('../assets/images/mainplate/slide1.png')} alt="" />
-                        <span>古典专区</span>
-                    </div>
-                    <div className="swiper-slide">
-                        <img src={require('../assets/images/mainplate/slide1.png')} alt="" />
-                        <span>跑步FM</span>
-                    </div>
-                    <div className="swiper-slide">
-                        <img src={require('../assets/images/mainplate/slide1.png')} alt="" />
-                        <span>小冰电台</span>
-                    </div>
-                    <div className="swiper-slide">
-                        <img src={require('../assets/images/mainplate/slide1.png')} alt="" />
-                        <span>爵士电台</span>
-                    </div>
-                    <div className="swiper-slide">
-                        <img src={require('../assets/images/mainplate/slide1.png')} alt="" />
-                        <span>驾驶模式</span>
-                    </div>
-                    <div className="swiper-slide">
-                        <img src={require('../assets/images/mainplate/slide1.png')} alt="" />
-                        <span>云村正能量</span>
-                    </div>
-                    <div className="swiper-slide">
-                        <img src={require('../assets/images/mainplate/slide1.png')} alt="" />
-                        <span>编辑</span>
-                    </div>
+                    <a href="https://music.163.com/">
+                        <div className="swiper-slide">
+                            <img src={require('../assets/images/mainplate/slide1.png')} alt="" />
+                            <span>最嗨电音</span>
+                        </div>
+                    </a>
+                    <a href="https://music.163.com/">
+                        <div className="swiper-slide">
+                            <img src={require('../assets/images/mainplate/slide1.png')} alt="" />
+                            <span>私人FM</span>
+                        </div>
+                    </a>
+                    <a href="https://music.163.com/">
+                        <div className="swiper-slide">
+                            <img src={require('../assets/images/mainplate/slide1.png')} alt="" />
+                            <span>ACG专区</span>
+                        </div>
+                    </a>
+                    <a href="https://music.163.com/">
+                        <div className="swiper-slide">
+                            <img src={require('../assets/images/mainplate/slide1.png')} alt="" />
+                            <span>Sati空间</span>
+                        </div>
+                    </a>
+                    <a href="https://music.163.com/">
+                        <div className="swiper-slide">
+                            <img src={require('../assets/images/mainplate/slide1.png')} alt="" />
+                            <span>私藏推荐</span>
+                        </div>
+                    </a>
+                    <a href="https://music.163.com/">
+                        <div className="swiper-slide">
+                            <img src={require('../assets/images/mainplate/slide1.png')} alt="" />
+                            <span>因乐交友</span>
+                        </div>
+                    </a>
+                    <a href="https://music.163.com/">
+                        <div className="swiper-slide">
+                            <img src={require('../assets/images/mainplate/slide1.png')} alt="" />
+                            <span>亲子频道</span>
+                        </div>
+                    </a>
+                    <a href="https://music.163.com/">
+                        <div className="swiper-slide">
+                            <img src={require('../assets/images/mainplate/slide1.png')} alt="" />
+                            <span>古典专区</span>
+                        </div>
+                    </a>
+                    <a href="https://music.163.com/">
+                        <div className="swiper-slide">
+                            <img src={require('../assets/images/mainplate/slide1.png')} alt="" />
+                            <span>跑步FM</span>
+                        </div>
+                    </a>
+                    <a href="https://music.163.com/">
+                        <div className="swiper-slide">
+                            <img src={require('../assets/images/mainplate/slide1.png')} alt="" />
+                            <span>小冰电台</span>
+                        </div>
+                    </a>
+                    <a href="https://music.163.com/">
+                        <div className="swiper-slide">
+                            <img src={require('../assets/images/mainplate/slide1.png')} alt="" />
+                            <span>爵士电台</span>
+                        </div>
+                    </a>
+                    <a href="https://music.163.com/">
+                        <div className="swiper-slide">
+                            <img src={require('../assets/images/mainplate/slide1.png')} alt="" />
+                            <span>驾驶模式</span>
+                        </div>
+                    </a>
+                    <a href="https://music.163.com/">
+                        <div className="swiper-slide">
+                            <img src={require('../assets/images/mainplate/slide1.png')} alt="" />
+                            <span>云村正能量</span>
+                        </div>
+                    </a>
+                    <a href="https://music.163.com/">
+                        <div className="swiper-slide">
+                            <img src={require('../assets/images/mainplate/slide1.png')} alt="" />
+                            <span>编辑</span>
+                        </div>
+                    </a>
                 </div>
             </div>
         </>;
