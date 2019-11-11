@@ -1,10 +1,10 @@
-import React from 'react';
+import React , { Component }from 'react';
 
-class PersonalList extends React.Component {
+class PersonalList extends Component {
 	render() {
-		return <div>
-			二级页面
-		</div>;
+		return <>
+			本地音乐
+		</>;
 	}
 }
 
