@@ -39,7 +39,7 @@ class System extends React.Component {
                     onClose={this.onClose}
                     visible={this.state.visible}
                     getContainer={false}
-                    style={{ position: 'absolute' }}
+                    
                 >
                     <div className='sysMainBox'>
                         <div className='sysMainHead'>

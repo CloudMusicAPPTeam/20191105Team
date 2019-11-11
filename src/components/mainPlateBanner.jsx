@@ -13,6 +13,7 @@ class MainPlateBanner extends React.Component {
             this.setState({});
         }, 1000);
     }
+    
     render() {
         return <>
             <div className="swiper-container">
@@ -82,7 +83,9 @@ class MainPlateBanner extends React.Component {
     componentDidUpdate() {
         if (this.swiperExample) return;
         this.swiperExample = new Swiper('.swiper-container', {
-            loop: false
+            loop: false,
+            autoplay: false,
+            width:60
         });
     }
 }
