@@ -1,5 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import Swiper from 'swiper';
 import 'swiper/css/swiper.css';
 import './mainPlateBanner.less';
@@ -82,7 +81,8 @@ class MainPlateBanner extends React.Component {
     componentDidUpdate() {
         if (this.swiperExample) return;
         this.swiperExample = new Swiper('.swiper-container', {
-            loop: false
+            loop: false,
+            width: 60
         });
     }
 }

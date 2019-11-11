@@ -1,10 +1,11 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux'
+import React from 'react';
 import 'antd/dist/antd.css';
 import zhCN from 'antd/es/locale/zh_CN';
 import { ConfigProvider, Tabs } from 'antd';
 import './Cloud.less';
 import '../../assets/css/reset.min.css'
+import axios from '../../api/axios';
+import WaterFall from '../../components/waterFall';
 
 const { TabPane } = Tabs;
 
@@ -33,30 +34,7 @@ class Cloud extends React.Component {
 								</span>
 							</div>
 						</div>
-						<div className='waterFall'>
-							<div className='leftBox'>
-								<img className='imgBig' src={require('../../assets/images/mainplate/likeMusicBg.jpg')} alt="" />
-								<div className='topBox'>
-									<p>从锦鲤抄到妙笔浮生，从物体到月球，银临然购物见到了一个又一个独特的身影。</p>
-									<div className='btmBox'>
-										<img className='imgSmall' src={require('../../assets/images/mainplate/likeMusicBg.jpg')} alt="" />
-										<span>银幕轻尘</span>
-										<span>2453赞</span>
-									</div>
-								</div>
-							</div>
-							<div className='rightBox'>
-								<img className='imgBig' src={require('../../assets/images/mainplate/likeMusicBg.jpg')} alt="" />
-								<div className='topBox'>
-									<p>从锦鲤抄到妙笔浮生，从物体到月球，银临然购物见到了一个又一个独特的身影。哈哈哈哈哈哈哈</p>
-									<div className='btmBox'>
-										<img className='imgSmall' src={require('../../assets/images/mainplate/likeMusicBg.jpg')} alt="" />
-										<span className='leftSpan'>银幕轻尘</span>
-										<span className='rightSpan'>2453赞</span>
-									</div>
-								</div>
-							</div>
-						</div>
+						<WaterFall />
 					</div>
 				</TabPane>
 				<TabPane tab="动态" key="2">
@@ -66,10 +44,10 @@ class Cloud extends React.Component {
 		</ConfigProvider>;
 	}
 	componentDidMount() {
-		let waterFall = () => {
-			let pageH = window.innerHeight;
-		}
-	}
+		axios.get('/waterfall/list', item => {
+			console.log(item.data);
+		});
+	}	
 }
 
 export default Cloud;

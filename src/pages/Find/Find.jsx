@@ -1,5 +1,5 @@
 import React from 'react';
-import { connect } from 'react-redux';
+
 import "./Find.less";
 class Find extends React.Component {
 	render() {

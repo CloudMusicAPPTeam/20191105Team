@@ -1,6 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { Switch, Route } from 'react-router-dom';
 import './Personal.less';
 import MainPlateBanner from '../../components/mainPlateBanner';
 import '../../assets/iconfont/iconfont.css';
