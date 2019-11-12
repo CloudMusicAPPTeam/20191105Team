@@ -13,7 +13,6 @@ class WaterFall extends Component {
 		this.ajax = 1;
 
 	};
-	//@decorateArmour
 	componentWillMount() {
 		this.ajaxData();
 	}

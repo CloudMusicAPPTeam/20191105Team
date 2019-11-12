@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import Swiper from 'swiper';
 import 'swiper/css/swiper.css';
 import './Banner.less';
+import Axios from 'axios';
 
 class Banner extends React.Component {
 	state = {

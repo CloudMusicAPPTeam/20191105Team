@@ -7,8 +7,7 @@ import Cloud from './Cloud/Cloud';
 import Video from './Video/Video';
 import Search from './Search/Search';
 import Tab from '../components/Tab';
-/* import System from '../components/system'; */
-
+import LocalMusic from './TwoLevelPage/LocalMusic/localmusic';
 /* 导入公共的样式 */
 import '../assets/css/reset.min.css';
 import '../assets/css/common.less';
@@ -20,16 +19,14 @@ export default class App extends React.Component {
 			<Tab />
 
 			<Switch>
+				<Route path='/' component={Find} exact />
 				<Route path='/login' component={Login} />}
 				<Route path='/personal' component={Personal} />
-				<Route path='/' component={Find} exact />
 				<Route path='/cloud' component={Cloud} />
 				<Route path='/video' component={Video} />
 				<Route path='/search' component={Search} />
-				<Redirect to='/' />
+				<Route path='/localmusic' component={LocalMusic} />
 			</Switch>
-
-
 		</HashRouter>;
 	}
 }
