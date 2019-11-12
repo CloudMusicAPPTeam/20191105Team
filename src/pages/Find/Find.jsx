@@ -1,14 +1,21 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { HashRouter, Switch, Route, Redirect } from 'react-router-dom';
 import "./Find.less";
+import FindMain from './FindMain';
+import FindNav from './FindNav';
+import Banner from '../../components/Banner';
+
+
 class Find extends React.Component {
 	render() {
-		return <div>
-			{/* 发现(主页) */}
-			<div className="bottomBox">
-				<img src={require('../../assets/images/personal_bg_top.png')} alt=""/>
-			</div>
-		</div>;
+		return <div className="main-box">
+			<Banner />
+			<FindNav />
+			<FindMain />
+		
+		</div>
+		
 	}
 }
 

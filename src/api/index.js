@@ -1,6 +1,8 @@
 import login from './login';
-
+import bannerList from './bannerList'
 const api = {
-    login
+    login,
+    bannerList
+
 };
 export default api;

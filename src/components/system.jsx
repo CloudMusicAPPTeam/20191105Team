@@ -7,7 +7,7 @@ import SysList from './systemList/systemListTitle';
 import SystemMain from './systemList/systemMain';
 import SystemBottom from './systemList/sysbottom';
 
-import {  NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 class System extends React.Component {
     state = { visible: false };
@@ -39,7 +39,6 @@ class System extends React.Component {
                     onClose={this.onClose}
                     visible={this.state.visible}
                     getContainer={false}
-                    
                 >
                     <div className='sysMainBox'>
                         <div className='sysMainHead'>
@@ -48,7 +47,7 @@ class System extends React.Component {
                             </div>
                             <div className='sysMainText'>
                                 <NavLink to='/login'>伊利丹·怒风</NavLink>
-                                
+
                                 <span className='sysLive'>Lv.5</span>
                                 <span className='sysMainqiandao'><i></i><span>签到</span></span>
                             </div>
@@ -60,7 +59,7 @@ class System extends React.Component {
 
                 </Drawer>
 
-               
+
             </div>
         </ConfigProvider>
     }

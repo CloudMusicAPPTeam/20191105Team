@@ -7,6 +7,7 @@ import Cloud from './Cloud/Cloud';
 import Video from './Video/Video';
 import Search from './Search/Search';
 import Tab from '../components/Tab';
+import XiangXi from './Find/xiangxi/xiangxi';
 /* import System from '../components/system'; */
 
 /* 导入公共的样式 */
@@ -26,10 +27,10 @@ export default class App extends React.Component {
 				<Route path='/cloud' component={Cloud} />
 				<Route path='/video' component={Video} />
 				<Route path='/search' component={Search} />
+				<Route path='/xiangxi' component={XiangXi}/>
 				<Redirect to='/' />
 			</Switch>
 
-			{/* 公共的头部导航 */}
 
 		</HashRouter>;
 	}
