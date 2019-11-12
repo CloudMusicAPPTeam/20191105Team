@@ -7,6 +7,7 @@ import '../../assets/css/reset.min.css'
 import axios from '../../api/axios';
 import WaterFall from '../../components/waterFall';
 import ShiPin from './codeShipin';
+import Dynamic from './Dynamic';
 
 const { TabPane } = Tabs;
 
@@ -41,7 +42,7 @@ class Cloud extends React.Component {
 					<ShiPin></ShiPin>
 				</TabPane>
 				<TabPane tab="动态" key="2">
-					动态
+					<Dynamic />
     			</TabPane>
 			</Tabs>
 		</ConfigProvider>;
