@@ -22,7 +22,6 @@ class LocalMusic extends React.Component {
                         <div>
                             <p></p>
                         </div>
-
                     </div>
                 </TabPane>
             </Tabs>
