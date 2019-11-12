@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {Link,HashRouter} from 'react-router-dom';
-import MainPlateBanner from '../../components/mainPlateBanner';
 import './Personal.less';
 import '../../assets/iconfont/iconfont.css';
 
@@ -20,7 +19,7 @@ class Personal extends Component {
 		return <HashRouter>
 			<div className="main-body">
 				{/* 类似轮播图的组件 */}
-				<MainPlateBanner />
+				
 			</div>
 			<div className='banner'>
 				<div className='bannerLi'>

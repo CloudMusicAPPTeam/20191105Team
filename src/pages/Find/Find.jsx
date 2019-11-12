@@ -1,8 +1,10 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import "./Find.less";
 import FindMain from './FindMain';
 import FindNav from './FindNav';
 import Banner from '../../components/Banner';
+
 
 class Find extends React.Component {
 	render() {
@@ -10,7 +12,9 @@ class Find extends React.Component {
 			<Banner />
 			<FindNav />
 			<FindMain />
+		
 		</div>
+		
 	}
 }
 

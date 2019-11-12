@@ -1,12 +1,15 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import { withRouter,NavLink } from 'react-router-dom';
 import './FindMain.less';
 
 function FindMain(props) {
     return <div className="home_main">
         <div className="main_remd">
             <div className="remd_title">
-                <h2 className="title_text1">推荐歌单</h2>
+                <NavLink to='/xiangxi'>
+                    <h2 className="title_text1">推荐歌单</h2>
+                </NavLink>
+
                 <a href="" className="title_text2">歌单广场</a>
             </div>
             <div className="remd_ul">

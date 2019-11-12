@@ -8,6 +8,7 @@ import Video from './Video/Video';
 import Search from './Search/Search';
 import Tab from '../components/Tab';
 import LocalMusic from './TwoLevelPage/LocalMusic/localmusic';
+import XiangXi from './Find/xiangxi/xiangxi';
 /* 导入公共的样式 */
 import '../assets/css/reset.min.css';
 import '../assets/css/common.less';
@@ -26,6 +27,8 @@ export default class App extends React.Component {
 				<Route path='/video' component={Video} />
 				<Route path='/search' component={Search} />
 				<Route path='/localmusic' component={LocalMusic} />
+				<Route path='/xiangxi' component={XiangXi}/>
+				<Redirect to='/' />
 			</Switch>
 		</HashRouter>;
 	}
