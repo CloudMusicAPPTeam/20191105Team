@@ -1,22 +1,20 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import Swiper from 'swiper';
 import 'swiper/css/swiper.css';
 import './Banner.less';
-import actions from '../store/actions/index';
-import bannerList from '../../src/api/index';
 import axios from '../api/axios';
 
 
 class Banner extends React.Component {
 	state = {
 		data: [],
-	
-
 	};
 
 	componentWillMount() {
+		
 		axios.post('/banner/list').then(result => {
+
+			console.log(result)
 			this.setState({
 				data:result,
 				
