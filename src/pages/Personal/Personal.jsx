@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Link,HashRouter} from 'react-router-dom';
 import './Personal.less';
 import '../../assets/iconfont/iconfont.css';
+import '../../assets/images/personalIcon/iconfont.css';
 
 import { Collapse, Icon } from 'antd';
 const { Panel } = Collapse;
@@ -18,8 +19,32 @@ class Personal extends Component {
 	render() {
 		return <HashRouter>
 			<div className="main-body">
-				{/* 类似轮播图的组件 */}
-				
+				<ul className='personNav'>
+					<li className='personLi'>
+						<div>
+							<i className='iconfont  icon-FM'></i>
+							<p>私人FM</p>
+						</div>
+
+					</li>
+					<li className='personLi'>
+						<i className='iconfont  icon-paobu'></i>
+						<p>跑步FM</p>
+					</li>
+					<li className='personLi'>
+						<i className='iconfont  icon-dianyinjielogo'></i>
+						<p>最嗨电音</p>
+					</li>
+					<li className='personLi'>
+						<i className='iconfont  icon-shoucang'></i>
+						<p>私藏推荐</p>
+					</li>
+					<li className='personLi'>
+						<i className='iconfont  icon-zhibo'></i>
+						<p>直播</p>
+					</li>
+				</ul>
+
 			</div>
 			<div className='banner'>
 				<div className='bannerLi'>

@@ -6,6 +6,7 @@ import './Cloud.less';
 import '../../assets/css/reset.min.css'
 import axios from '../../api/axios';
 import WaterFall from '../../components/waterFall';
+import ShiPin from './codeShipin';
 
 const { TabPane } = Tabs;
 
@@ -14,6 +15,7 @@ class Cloud extends React.Component {
 		return <ConfigProvider locale={zhCN}>
 			<Tabs defaultActiveKey="1">
 				<TabPane tab="广场" key="1">
+					
 					<div className='hotComment'>
 						<div className='commentWall'>
 							<div className='leftBox'>
@@ -22,7 +24,7 @@ class Cloud extends React.Component {
 									<i className='iconfont icon-qianjing-'></i>
 								</div>
 								<div className='mybottomBox'>
-									<span>罗英达，今日最戳心评论，你看过几条？</span>
+									<span>今日最戳心评论，你看过几条？</span>
 								</div>
 							</div>
 							<div className='rightBox'>
@@ -36,6 +38,7 @@ class Cloud extends React.Component {
 						</div>
 						<WaterFall />
 					</div>
+					<ShiPin></ShiPin>
 				</TabPane>
 				<TabPane tab="动态" key="2">
 					动态

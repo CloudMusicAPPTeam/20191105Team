@@ -1,0 +1,44 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "362640",
+      "name": "电台",
+      "font_class": "diantai",
+      "unicode": "e6f4",
+      "unicode_decimal": 59124
+    },
+    {
+      "icon_id": "1019856",
+      "name": "rili",
+      "font_class": "rili",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "1813000",
+      "name": "排行榜 选中",
+      "font_class": "paihangbangxuanzhong",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "7317525",
+      "name": "直播",
+      "font_class": "zhibo",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "11380251",
+      "name": "歌单",
+      "font_class": "gedan",
+      "unicode": "e501",
+      "unicode_decimal": 58625
+    }
+  ]
+}
