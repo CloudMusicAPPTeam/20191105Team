@@ -12,16 +12,19 @@ class Header extends React.Component {
 	componentWillMount() {
 		axios.post('/user/login').then(result => {
 			this.setState({
-				data: result.data,
+				data: result,
 			});
 		});
+
 	}
 
 	handleLoginBtn = () => {
 		let account = this.refs.account.state.value,
-			password = this.refs.password.state.value
+			password = this.refs.password.state.value;
+		
 		if (account === this.state.data[0].phone && password === this.state.data[0].password) {
-			this.props.history.push({ pathname: "/"});
+			this.props.history.push({ pathname: "/" });
+			return;
 		}
 		message.info("账号和密码不匹配，请核对后再试！")
 	}
